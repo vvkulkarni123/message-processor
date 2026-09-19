@@ -1,0 +1,26 @@
+import numpy as np
+import matplotlib.pyplot as plt
+a = np.array([1, 2, 3])
+print(a)
+print(type(a))
+print(a.shape)
+print(a.ndim)
+print(a.dtype)
+print(a.itemsize)
+print(a.size)
+print(a.nbytes)
+print(a[2])
+b=np.zeros(3)
+print(b)
+
+m = np.array([np.arange(6), np.arange(6)])
+print(m)
+
+t = np.dtype([('name', np.str_, 40), ('numitems', np.int32), ('price', np.float32)])
+print(t)
+x=np.arange(10)
+print(x[3:7])
+y=np.arange(24).reshape(2,3,4)
+#y.ravel()
+y.flatten()
+print(y)
